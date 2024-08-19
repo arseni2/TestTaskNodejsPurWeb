@@ -1,17 +1,17 @@
 npm i
 
-#Для Запуска БД
+# Для Запуска БД
 
 docker-compose up -d
 
-#Миграции
+# Миграции
 
 npm run migration:run
 
-#Старт проекта
+# Старт проекта
 
 npm run dev
 
-#Документация swagger
+# Документация swagger
 
 http://localhost:8000/docs
