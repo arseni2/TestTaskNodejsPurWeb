@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: postgres
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=testTaskForPurWeb
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5555:5432"
